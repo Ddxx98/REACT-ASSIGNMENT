@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width">
-<title>Designing Web App using HTML/CSS/REACT</title>
-<link rel="stylesheet" href="style.css" />
-<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-<!-- Don't use this in production: -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-//React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Designing Web App using HTML/CSS/REACT</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <!-- Don't use this in production: -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
 
-</script>
-<!--
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            //React Code 
+            //      --------------------Code in JSX----------------------
+            const One = ({props}) =>{
+                return(
+                    <div className="container1">
+                        <div className="secYellow">
+                            |<div className="yellow"></div>
+                            <div className="yellow"></div>
+                        </div>
+                        <div className="onePink">
+                            <div className="pink"></div>
+                        </div>
+                        <div className="thirdBlue">
+                            <div className="blue"></div>
+                            <div className="blue"></div>
+                            <div className="blue"></div>
+                        </div>
+                    </div>
+                );
+            };
+            //      --------------------Code in React---------------------
+            // const yellow = React.createElement('div',{className:'yellow'})
+            // const pink = React.createElement('div',{className:'pink'})
+            // const blue = React.createElement('div',{className:'blue'})
+            // const onePink = React.createElement('div',{className:'onePink'},pink)
+            // const secYellow = React.createElement('div',{className:'secYellow'},[yellow,yellow])
+            // const thirdBlue = React.createElement('div',{className:'thirdBlue'},[blue,blue,blue])
+            // const one = React.createElement('div', {className:"container1"},[secYellow,onePink,thirdBlue])
+            ReactDOM.render(<One></One>, document.getElementById("root"));
+        </script>
+        <!--
      Note: this page is a great way to try React but it's not suitable for production.
      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
      Read this section for a production-ready setup with JSX:
@@ -27,5 +54,5 @@
      You can also use React without JSX, in which case you can remove Babel:
      https://reactjs.org/docs/react-without-jsx.html
    -->
-</body>
+    </body>
 </html>

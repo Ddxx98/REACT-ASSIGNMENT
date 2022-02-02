@@ -1,1 +1,57 @@
-
+#root{
+    background-color: grey;
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.container1{
+    margin: 20px;
+    background-color: white;
+    width: 100%;
+    height: 100%; 
+    
+}
+.yellow{
+    background-color: yellow;
+    margin: 10px;
+    height: 150px;
+}
+.pink{
+    background-color: rgb(241, 50, 82);
+    margin: 0 10px;
+    height: 150px;
+}
+.blue{
+    background-color: blue;
+    margin: 10px;
+    height: 150px;
+}
+@media screen and (min-device-width:1024px){
+    .secYellow{
+        display: flex;
+    }
+    .secYellow .yellow{
+        flex: 1 1 auto;
+    }
+    .thirdBlue{
+        display: flex;
+    }
+    .thirdBlue .blue{
+        flex: 1 1 auto;
+    }
+}
+@media screen and (min-device-width:767px) and (max-device-width:1023px) {
+    .secYellow{
+        display: flex;
+    }
+    .secYellow .yellow{
+        flex: 1 1 auto;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width:767px) {
+    div{
+        display: block;
+    }
+}
