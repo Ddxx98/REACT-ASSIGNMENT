@@ -8,14 +8,24 @@ function App(props) {
 return(
   <div className="container">
   {/* Start your React code here */}
-  <img src ={employee.profileImg} alt="profile"></img>
-  <h1>{employee.name}</h1>
-  <p><strong>Location</strong></p>
-  <h3>{employee.location}</h3>
-  <p><strong>Blood Group</strong></p>
-  <h3>{employee.bloodGroup}</h3>
-  <p><strong>Age</strong></p>
-  <h3>{employee.age}</h3>
+  <div className="div image">
+    <img src ={employee.profileImg} alt="profile"></img>
+  </div>
+  <div className="div name">
+    <h1>{employee.name}</h1>
+  </div>
+  <div className="div location">
+    <label><strong>Location</strong></label>
+    <h3>{employee.location}</h3>
+  </div>
+  <div className="div bloodGroup">
+    <label><strong>Blood Group</strong></label>
+    <h3>{employee.bloodGroup}</h3>
+  </div>
+  <div className="div age">
+    <label><strong>Age</strong></label>
+    <h3>{employee.age}</h3>
+  </div>
 </div>
 )
 }

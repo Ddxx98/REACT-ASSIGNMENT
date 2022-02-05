@@ -46,13 +46,16 @@
 } */
 h1{
   color: rgb(65, 65, 243);
-  font-size: 50px;
+  
 }
-p{
+label{
   opacity: 0.4;
 }
 img{
   height: 300px;
   width: 300px;
   border-radius: 10px;
+}
+.div{
+  margin: 30px;
 }
